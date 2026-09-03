@@ -13,6 +13,8 @@ import FavoriteProperty from "./Pages/FavoriteProperty.jsx";
 import ProtectedRoute from "./Pages/ProtectedRoute.jsx";
 import Logout from "./Pages/Logout.jsx";
 import Footer from "./Components/Footer.jsx";
+import Payment from "./Pages/Payment.jsx";
+import Success from "./Pages/Success.jsx";
 
 
 function App() {
@@ -32,8 +34,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-           <Route path="/logout" element={<Login />} />
+           <Route path="/logout" element={<Logout />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/success" element={<Success/>} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/show-property" element={<ShowProperty addToFavorites={addToFavorites} /> }/>
          <Route path="/property/:id" element={ <ShowProperty addToFavorites={addToFavorites} /> }/>
